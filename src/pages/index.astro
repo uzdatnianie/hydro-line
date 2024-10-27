@@ -1,9 +1,94 @@
 ---
+import Image from 'astro/components/Image.astro';
+import Img01 from '../img/img01.png';
+import Img02 from '../img/img02.png';
+import Button from '../components/Button.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Nasze produkty">
   <main>
-    <p>...page content</p>
+    <section class="relative px-10 py-25">
+      <div class="absolute right-20">
+        <Image src={Img01} alt="img01" width={338} height={451} class={'relative z-1'} />
+        <div class="w-90 h-90 absolute top-0 right--2 bg-blue blur-2xl rounded-full opacity-50"></div>
+      </div>
+      <div class="max-w-1/2">
+        <p class="fw-600 text-2xl"><strong>HYDRO</strong> Velvet</p>
+        <h2 class="my-2">NOWOCZESNY & EKONOMICZNY</h2>
+        <p class="c-accent mb-5 mr-10">
+          Zmiękczacz wody z proporcjonalną regeneracją, dezynfekcją złoża poprzez chlorowanie metodą
+          elektrolizy. Aż do 80% oszczędności soli!
+        </p>
+        <Button bgcolor={'blue'}>Dowiedz się więcej</Button>
+      </div>
+    </section>
+    <section class="bluegrad-bg backdrop-blur p-10 relative rounded-10 z-1">
+      <div>
+        <h3 class="c-accent text-2xl">Chcesz poprawić jakość swojej wody?</h3>
+        <p class="my-5">
+          Aqua Service może pomóc. Z ponad 22-letnim doświadczeniem i ponad 2420 zrealizowanymi
+          projektami, znamy się na uzdatnianiu wody jak mało kto.
+        </p>
+        <p>
+          Niezależnie od tego, czy potrzebujesz wody wolnej od zanieczyszczeń w domu, czy
+          precyzyjnie oczyszczonej wody do procesów przemysłowych, mamy rozwiązania, które działają.
+          Nasze systemy są sprawdzone w ponad 200 zakładach i tysiącach domów. Możemy pomóc także
+          Tobie, zapewniając wodę, która spełnia najwyższe standardy jakości.
+        </p>
+      </div>
+    </section>
+    <section class="p-10 flex relative justify-right">
+      <div class="absolute left-20">
+        <Image src={Img02} alt="img02" width={309} height={479} class={'relative top-5 z-1'} />
+        <div class="w-90 h-90 absolute top-20 right--2 bg-accent blur-2xl rounded-full opacity-25"></div>
+      </div>
+      <div class="max-w-1/2">
+        <h2>Zmiękczacze</h2>
+        <p class="c-accent my-5">
+          Nasze zmiękczacze wody to innowacyjne urządzenia, które skutecznie eliminują problem
+          twardości wody, chroniąc instalacje wodne oraz sprzęty domowe przed osadami kamienia.
+        </p>
+        <p class="c-accent mb-5">
+          Dzięki nowoczesnym technologiom i efektywnym procesom regeneracji, zmiękczacze Hydro Line
+          zapewniają wydłużenie żywotności urządzeń, zmniejszenie zużycia detergentów oraz poprawę
+          komfortu codziennego użytkowania wody. Oferujemy szeroki wybór modeli dostosowanych do
+          indywidualnych potrzeb zarówno domowych, jak i przemysłowych.
+        </p>
+        <Button>Odkryj nasze zmiękczacze</Button>
+      </div>
+    </section>
+    <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 z-1">
+      <div class="max-w-1/2">
+        <h2>Odżelaziacze</h2>
+        <p class="c-accent my-5">
+          Nasze stacje są projektowane z myślą o różnych zastosowaniach, zarówno w gospodarstwach
+          domowych, jak i w przemyśle. Dzięki nowoczesnym technologiom, takim jak filtracja
+          mechaniczna, zmiękczanie czy demineralizacja, stacje zapewniają wodę o odpowiednich
+          parametrach, niezbędnych do bezpiecznego użytkowania w różnych procesach technologicznych.
+        </p>
+        <p class="c-accent mb-5">
+          Aqua Service gwarantuje niezawodność i efektywność działania swoich stacji, co potwierdza
+          szerokie grono zadowolonych klientów.
+        </p>
+        <Button>Odkryj nasze odżelaziacze</Button>
+      </div>
+    </section>
+    <section class="p-10 flex justify-right">
+      <div class="max-w-1/2">
+        <h2>Stacje Wielofunkcyjne</h2>
+        <p class="c-accent my-5">
+          Nasze stacje są projektowane z myślą o różnych zastosowaniach, zarówno w gospodarstwach
+          domowych, jak i w przemyśle. Dzięki nowoczesnym technologiom, takim jak filtracja
+          mechaniczna, zmiękczanie czy demineralizacja, stacje zapewniają wodę o odpowiednich
+          parametrach, niezbędnych do bezpiecznego użytkowania w różnych procesach technologicznych.
+        </p>
+        <p class="c-accent mb-5">
+          Hydro Line gwarantuje niezawodność i efektywność działania swoich stacji, co potwierdza
+          szerokie grono zadowolonych klientów.
+        </p>
+        <Button>Odkryj stacje wielofunkcyjne</Button>
+      </div>
+    </section>
   </main>
 </Layout>
