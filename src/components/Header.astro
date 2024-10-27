@@ -1,0 +1,15 @@
+---
+import Logo from './Logo.astro';
+import Menu from './Menu.astro';
+---
+
+<header>
+  <a href="/"><Logo /></a>
+  <Menu />
+</header>
+
+<style>
+  header {
+    @apply flex items-center justify-between pt-15;
+  }
+</style>
