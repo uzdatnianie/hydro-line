@@ -1,0 +1,17 @@
+---
+interface Props {
+  bgcolor?: string;  
+}
+
+const { bgcolor } = Astro.props;
+---
+
+<button type="button" class={`bg-${bgcolor || 'transparent'}`}>
+  <slot />
+</button>
+
+<style>
+  button {
+    @apply border-2 fw-600 px-5 py-1 rounded-full text-2xl;
+  }
+</style>
