@@ -1,5 +1,5 @@
-<footer>
-  <div>
+<footer class="p-10 border-t-2 border-t-accent">
+  <div class="flex justify-between opacity-50">
     <p>
       <strong>Aqua Service s.c.</strong><br />
       ul. Słowackiego 50<br />
@@ -9,9 +9,14 @@
       NIP: 7952568786<br />
       REGON: 521666572
     </p>
-    <p class="">
-      <span>Śledź nasze <br /> realizacje</span>
-    </p>
+    <div class="flex justify-start gap-3">
+      <span>
+        Śledź nasze<br />
+        realizacje
+      </span>
+      <a href="/"><div class="i-mdi-instagram icon"></div></a>
+      <a href="/"><div class="i-mdi-facebook icon"></div></a>
+    </div>
     <p>
       <a href="/polityka-prywatnosci">Polityka prywatności</a><br />
       <a href="/klauzula-informacyjna">Klauzula informacyjna</a>
@@ -20,11 +25,11 @@
 </footer>
 
 <style>
-  footer {
-    @apply p-10 border-t-2 border-t-accent;
+  .icon {
+    @apply w-10 h-10 c-white;
   }
 
-  div {
-    @apply flex justify-between opacity-50;
+  .icon:hover {
+    @apply c-accent;
   }
 </style>
