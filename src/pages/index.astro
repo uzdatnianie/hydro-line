@@ -1,17 +1,24 @@
 ---
-import Image from 'astro/components/Image.astro';
-import Img01 from '../img/img01.png';
-import Img02 from '../img/img02.png';
-import Button from '../components/Button.astro';
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Image from 'astro/components/Image.astro';
+import Partners from '../components/Partners.astro';
+
+import img01 from '../img/img01.png';
+import img02 from '../img/img02.png';
+import img03 from '../img/img03.png';
+import img04 from '../img/img04.png';
+import img05 from '../img/img05.jpg';
 ---
 
 <Layout title="Nasze produkty">
   <main>
     <section class="relative px-10 py-25">
       <div class="absolute right-20">
-        <Image src={Img01} alt="img01" width={338} height={451} class={'relative z-1'} />
-        <div class="w-90 h-90 absolute top-0 right--2 bg-blue blur-2xl rounded-full opacity-50"></div>
+        <Image src={img01} alt="img01" width={338} height={451} class={'relative z-1'} />
+        <div class="w-90 h-90 absolute top-0 right--2 bg-blue blur-2xl rounded-full opacity-50">
+        </div>
       </div>
       <div class="max-w-1/2">
         <p class="fw-600 text-2xl"><strong>HYDRO</strong> Velvet</p>
@@ -40,8 +47,9 @@ import Layout from '../layouts/Layout.astro';
     </section>
     <section class="p-10 flex relative justify-right">
       <div class="absolute left-20">
-        <Image src={Img02} alt="img02" width={309} height={479} class={'relative top-5 z-1'} />
-        <div class="w-90 h-90 absolute top-20 right--2 bg-accent blur-2xl rounded-full opacity-25"></div>
+        <Image src={img02} alt="img02" width={309} height={479} class={'relative top-5 z-1'} />
+        <div class="w-90 h-90 absolute top-20 right--2 bg-accent blur-2xl rounded-full opacity-25">
+        </div>
       </div>
       <div class="max-w-1/2">
         <h2>Zmiękczacze</h2>
@@ -59,6 +67,13 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
     <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 z-1">
+      <div class="absolute bottom-0 right-15">
+        <Image src={img03} alt="img03" width={342} height={417} class={'relative z-1'} />
+        <div
+          class="w-70 h-90 absolute bottom-15 right-10 bg-accent blur-2xl rounded-full opacity-25"
+        >
+        </div>
+      </div>
       <div class="max-w-1/2">
         <h2>Odżelaziacze</h2>
         <p class="c-accent my-5">
@@ -74,7 +89,14 @@ import Layout from '../layouts/Layout.astro';
         <Button>Odkryj nasze odżelaziacze</Button>
       </div>
     </section>
-    <section class="p-10 flex justify-right">
+    <section class="p-10 flex relative justify-right">
+      <div class="absolute bottom-0 left-5">
+        <Image src={img04} alt="img04" width={img04.width} height={img04.height} class={'relative z-1'} />
+        <div
+          class="w-90 h-90 absolute bottom-10 right--2 bg-accent blur-2xl rounded-full opacity-25"
+        >
+        </div>
+      </div>
       <div class="max-w-1/2">
         <h2>Stacje Wielofunkcyjne</h2>
         <p class="c-accent my-5">
@@ -90,5 +112,7 @@ import Layout from '../layouts/Layout.astro';
         <Button>Odkryj stacje wielofunkcyjne</Button>
       </div>
     </section>
+    <Partners backgroundUrl={`url(${img05.src})`} />
+    <ContactForm />
   </main>
 </Layout>
