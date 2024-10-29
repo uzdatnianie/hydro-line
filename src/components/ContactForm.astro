@@ -1,6 +1,37 @@
+---
+import Button from './Button.astro';
+---
+
 <section class="p-10">
-    <h2 class="text-center">Skontaktuj sie z doradcą</h2>
-    <form class="text-center">
-        [ContactForm content]
-    </form>
+  <h2 class="mb-10 text-center">Skontaktuj sie z doradcą</h2>
+  <form class="flex gap-10">
+    <div class="w-1/2">
+      <label>
+        <input type="checkbox" name="usertype[]" value="private" /> Chcę poprawić jakość mojej wody
+      </label>
+      <input type="text" placeholder="Imie i nazwisko" name="username" required />
+      <input type="text" placeholder="Numer telefonu" name="phone" required />
+      <Button bgColor="blue" fullWidth>Wyslij zgłoszenie</Button>
+    </div>
+    <div class="w-1/2">
+      <label>
+        <input type="checkbox" name="usertype[]" value="company" /> Chcę podjąć współpracę jako firma
+      </label>
+      <input type="email" placeholder="Adres email" name="email" required />
+      <textarea rows="5" placeholder="Opisz swoje zapytanie/problem z wodą" name="message" required
+      ></textarea>
+    </div>
+  </form>
 </section>
+
+<style>
+  input[type='email'],
+  input[type='text'],
+  textarea {
+    @apply border-1 border-blue mb-5 p-3 rounded-3 w-full c-black;
+  }
+
+  label {
+    @apply block mb-5 text-xl;
+  }
+</style>
