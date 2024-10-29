@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import ContactForm from '../components/ContactForm.astro';
-import Image from 'astro/components/Image.astro';
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
 import Partners from '../components/Partners.astro';
 
 import img01 from '../img/img01.png';
@@ -16,7 +16,7 @@ import img05 from '../img/img05.jpg';
   <main>
     <section class="relative px-10 py-25">
       <div class="absolute right-20">
-        <Image src={img01} alt="img01" width={338} height={451} class={'relative z-1'} />
+        <Image src={img01} alt="img01" class={'relative z-1'} />
         <div class="w-90 h-90 absolute top-0 right--2 bg-blue blur-2xl rounded-full opacity-50">
         </div>
       </div>
@@ -27,9 +27,10 @@ import img05 from '../img/img05.jpg';
           Zmiękczacz wody z proporcjonalną regeneracją, dezynfekcją złoża poprzez chlorowanie metodą
           elektrolizy. Aż do 80% oszczędności soli!
         </p>
-        <Button bgcolor={'blue'}>Dowiedz się więcej</Button>
+        <Button bgColor={'blue'}>Dowiedz się więcej</Button>
       </div>
     </section>
+
     <section class="bluegrad-bg backdrop-blur p-10 relative rounded-10 z-1">
       <div>
         <h3 class="c-accent text-2xl">Chcesz poprawić jakość swojej wody?</h3>
@@ -45,9 +46,10 @@ import img05 from '../img/img05.jpg';
         </p>
       </div>
     </section>
+
     <section class="p-10 flex relative justify-right">
       <div class="absolute left-20">
-        <Image src={img02} alt="img02" width={309} height={479} class={'relative top-5 z-1'} />
+        <Image src={img02} alt="img02" class={'relative top-5 z-1'} />
         <div class="w-90 h-90 absolute top-20 right--2 bg-accent blur-2xl rounded-full opacity-25">
         </div>
       </div>
@@ -66,9 +68,10 @@ import img05 from '../img/img05.jpg';
         <Button>Odkryj nasze zmiękczacze</Button>
       </div>
     </section>
+
     <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 z-1">
       <div class="absolute bottom-0 right-15">
-        <Image src={img03} alt="img03" width={342} height={417} class={'relative z-1'} />
+        <Image src={img03} alt="img03" class={'relative z-1'} />
         <div
           class="w-70 h-90 absolute bottom-15 right-10 bg-accent blur-2xl rounded-full opacity-25"
         >
@@ -89,9 +92,10 @@ import img05 from '../img/img05.jpg';
         <Button>Odkryj nasze odżelaziacze</Button>
       </div>
     </section>
+
     <section class="p-10 flex relative justify-right">
       <div class="absolute bottom-0 left-5">
-        <Image src={img04} alt="img04" width={img04.width} height={img04.height} class={'relative z-1'} />
+        <Image src={img04} alt="img04" class={'relative z-1'} />
         <div
           class="w-90 h-90 absolute bottom-10 right--2 bg-accent blur-2xl rounded-full opacity-25"
         >
@@ -112,6 +116,7 @@ import img05 from '../img/img05.jpg';
         <Button>Odkryj stacje wielofunkcyjne</Button>
       </div>
     </section>
+
     <Partners backgroundUrl={`url(${img05.src})`} />
     <ContactForm />
   </main>

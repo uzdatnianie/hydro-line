@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import logoAquaphor from '../img/logo_aquaphor.png';
 import logoClarwod from '../img/logo_clarwod.png';
-import logoPentair from "../img/logo_pentair.png";
+import logoPentair from '../img/logo_pentair.png';
 
 interface Props {
   backgroundUrl: string;
@@ -14,10 +14,10 @@ const { backgroundUrl } = Astro.props;
 <section class="p-10 rounded-10 bg-image">
   <h2 class="text-center">Współpracujemy z najlepszymi</h2>
   <div class="flex justify-between pt-10">
-    <Image src={logoPentair} class={'self-center'} alt="logo-pentair" width={logoPentair.width} height={logoPentair.height} />
-    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" width={logoAquaphor.width} height={logoAquaphor.height} />
-    <Image src={logoClarwod} class={'self-center'} alt="logo-clarwod" width={logoClarwod.width} height={logoAquaphor.height} />
-    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" width={logoAquaphor.width} height={logoAquaphor.height} />
+    <Image src={logoPentair} class={'self-center'} alt="logo-pentair" />
+    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" />
+    <Image src={logoClarwod} class={'self-center'} alt="logo-clarwod" />
+    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" />
   </div>
 </section>
 
