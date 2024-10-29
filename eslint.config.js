@@ -3,7 +3,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 export default [
   // add more generic rule sets here, such as:
-  // js.configs.recommended,
+  js.configs.recommended,
   jsxA11y.flatConfigs.recommended,
   ...eslintPluginAstro.configs.recommended,
   {
