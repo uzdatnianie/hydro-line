@@ -24,6 +24,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.33.5",
     "unocss": "^0.63.6"
   }
 }
