@@ -6,20 +6,31 @@ import Button from './Button.astro';
   <h2 class="mb-10 text-center">Skontaktuj sie z doradcą</h2>
   <form class="flex gap-10">
     <div class="w-1/2">
-      <label>
-        <input type="checkbox" name="usertype[]" value="private" /> Chcę poprawić jakość mojej wody
-      </label>
-      <input type="text" placeholder="Imie i nazwisko" name="username" required />
-      <input type="text" placeholder="Numer telefonu" name="phone" required />
-      <Button bgColor="blue" fullWidth>Wyslij zgłoszenie</Button>
+      <p>
+        <label>
+          <input type="radio" name="usertype[]" value="private" />
+          Chcę poprawić jakość mojej wody
+        </label>
+      </p>
+      <p><input type="text" placeholder="Imie i nazwisko" name="username" required /></p>
+      <p><input type="text" placeholder="Numer telefonu" name="phone" required /></p>
+      <p><Button bgColor="blue" fullWidth>Wyslij zgłoszenie</Button></p>
     </div>
     <div class="w-1/2">
-      <label>
-        <input type="checkbox" name="usertype[]" value="company" /> Chcę podjąć współpracę jako firma
-      </label>
-      <input type="email" placeholder="Adres email" name="email" required />
-      <textarea rows="5" placeholder="Opisz swoje zapytanie/problem z wodą" name="message" required
-      ></textarea>
+      <p>
+        <label>
+          <input type="radio" name="usertype[]" value="company" />
+          Chcę podjąć współpracę jako firma
+        </label>
+      </p>
+      <p><input type="email" placeholder="Adres email" name="email" required /></p>
+      <p>
+        <textarea
+          rows="5"
+          placeholder="Opisz swoje zapytanie/problem z wodą"
+          name="message"
+          required></textarea>
+      </p>
     </div>
   </form>
 </section>
@@ -28,10 +39,26 @@ import Button from './Button.astro';
   input[type='email'],
   input[type='text'],
   textarea {
-    @apply border-1 border-blue mb-5 p-3 rounded-3 w-full c-black;
+    @apply border-1 border-blue p-3 rounded-3 w-full c-black;
+  }
+
+  input[type='radio'] {
+    @apply appearance-none border-2 border-blue flex items-center justify-center rounded-full w-7 h-7;
+  }
+
+  input[type='radio']::before {
+    @apply content-[''] w-4 h-4 rounded-full bg-blue block scale-0;
+  }
+
+  input[type='radio']:checked::before {
+    @apply scale-full;
+  }
+
+  p {
+    @apply mb-7 text-xl;
   }
 
   label {
-    @apply block mb-5 text-xl;
+    @apply flex gap-3 cursor-pointer;
   }
 </style>
