@@ -15,11 +15,7 @@ import img05 from '../img/img05.jpg';
 <Layout title="Nasze produkty">
   <main>
     <section class="relative px-10 py-25">
-      <div class="absolute right-20">
-        <Image src={img01} alt="img01" class={'relative z-1'} />
-        <div class="w-90 h-90 absolute top-0 right--2 bg-blue blur-2xl rounded-full opacity-50">
-        </div>
-      </div>
+      <Image src={img01} alt="img01" class={'absolute top-0 right-0'} />
       <div class="max-w-1/2">
         <p class="fw-600 text-2xl"><strong>HYDRO</strong> Velvet</p>
         <h2 class="my-2">NOWOCZESNY & EKONOMICZNY</h2>
@@ -31,7 +27,7 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="bluegrad-bg backdrop-blur p-10 relative rounded-10 z-1">
+    <section class="bluegrad-bg backdrop-blur p-10 relative rounded-10 shadow-2xl">
       <div>
         <h3 class="c-accent text-2xl">Chcesz poprawić jakość swojej wody?</h3>
         <p class="my-5">
@@ -48,11 +44,7 @@ import img05 from '../img/img05.jpg';
     </section>
 
     <section class="p-10 flex relative justify-right">
-      <div class="absolute left-20">
-        <Image src={img02} alt="img02" class={'relative top-5 z-1'} />
-        <div class="w-90 h-90 absolute top-20 right--2 bg-accent blur-2xl rounded-full opacity-25">
-        </div>
-      </div>
+      <Image src={img02} alt="img02" width={img02.width} class={'absolute left-0'} />
       <div class="max-w-1/2">
         <h2>Zmiękczacze</h2>
         <p class="c-accent my-5">
@@ -69,14 +61,8 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 z-1">
-      <div class="absolute bottom-0 right-15">
-        <Image src={img03} alt="img03" class={'relative z-1'} />
-        <div
-          class="w-70 h-90 absolute bottom-15 right-10 bg-accent blur-2xl rounded-full opacity-25"
-        >
-        </div>
-      </div>
+    <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 shadow-2xl z-1">
+      <Image src={img03} alt="img03" class={'absolute bottom-0 right-0'} />
       <div class="max-w-1/2">
         <h2>Odżelaziacze</h2>
         <p class="c-accent my-5">
@@ -94,15 +80,9 @@ import img05 from '../img/img05.jpg';
     </section>
 
     <section class="p-10 flex relative justify-right">
-      <div class="absolute bottom-0 left-5">
-        <Image src={img04} alt="img04" class={'relative z-1'} />
-        <div
-          class="w-90 h-90 absolute bottom-10 right--2 bg-accent blur-2xl rounded-full opacity-25"
-        >
-        </div>
-      </div>
+      <Image src={img04} alt="img04" class={'absolute left-0 bottom-0'} />
       <div class="max-w-1/2">
-        <h2>Stacje Wielofunkcyjne</h2>
+        <h2>Stacje<br />Wielofunkcyjne</h2>
         <p class="c-accent my-5">
           Nasze stacje są projektowane z myślą o różnych zastosowaniach, zarówno w gospodarstwach
           domowych, jak i w przemyśle. Dzięki nowoczesnym technologiom, takim jak filtracja
