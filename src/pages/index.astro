@@ -14,9 +14,13 @@ import img05 from '../img/img05.jpg';
 
 <Layout title="Nasze produkty">
   <main>
-    <section class="relative px-10 py-25">
-      <Image src={img01} alt="img01" class={'absolute top-0 right-0'} />
-      <div class="max-w-1/2">
+    <section class="flex flex-col-reverse md-relative px-10 pt-25 md-pb-25">
+      <Image
+        src={img01}
+        alt="img01"
+        class={'mb--45 md-mb-0 mx-auto md-bottom--20 md-right-0 md-absolute '}
+      />
+      <div class="md-max-w-1/2">
         <p class="fw-600 text-2xl"><strong>HYDRO</strong> Velvet</p>
         <h2 class="my-2">NOWOCZESNY & EKONOMICZNY</h2>
         <p class="c-accent mb-5 mr-10">
@@ -27,7 +31,7 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="bluegrad-bg backdrop-blur p-10 relative rounded-10 shadow-2xl">
+    <section class="bluegrad-bg backdrop-blur p-10 relative md-rounded-10 shadow-2xl">
       <div>
         <h3 class="c-accent text-2xl">Chcesz poprawić jakość swojej wody?</h3>
         <p class="my-5">
@@ -43,9 +47,14 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="p-10 flex relative justify-right">
-      <Image src={img02} alt="img02" width={img02.width} class={'absolute left-0'} />
-      <div class="max-w-1/2">
+    <section class="flex flex-col-reverse md-relative px-10 pt-10 md-pb-10 items-end">
+      <Image
+        src={img02}
+        alt="img02"
+        width={img02.width}
+        class={'mx-auto mt-10 mb-0 md-absolute md-bottom--25 md-left-0'}
+      />
+      <div class="md-max-w-1/2">
         <h2>Zmiękczacze</h2>
         <p class="c-accent my-5">
           Nasze zmiękczacze wody to innowacyjne urządzenia, które skutecznie eliminują problem
@@ -61,9 +70,9 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="bluegrad-bg p-10 backdrop-blur relative rounded-10 shadow-2xl z-1">
-      <Image src={img03} alt="img03" class={'absolute bottom-0 right-0'} />
-      <div class="max-w-1/2">
+    <section class="bluegrad-bg backdrop-blur flex flex-col-reverse px-10 pt-10 md-pb-10 md-relative md-rounded-10 shadow-2xl">
+      <Image src={img03} alt="img03" class={'mx-auto mt-10 md-absolute md-bottom-0 md-right-0'} />
+      <div class="md-max-w-1/2">
         <h2>Odżelaziacze</h2>
         <p class="c-accent my-5">
           Nasze stacje są projektowane z myślą o różnych zastosowaniach, zarówno w gospodarstwach
@@ -79,9 +88,9 @@ import img05 from '../img/img05.jpg';
       </div>
     </section>
 
-    <section class="p-10 flex relative justify-right">
-      <Image src={img04} alt="img04" class={'absolute left-0 bottom-0'} />
-      <div class="max-w-1/2">
+    <section class="flex flex-col-reverse px-10 pt-10 pb-0 md-pb-10 md-relative items-end">
+      <Image src={img04} alt="img04" class={'mx-auto mt-10 md-absolute md-left-0 md-bottom-0'} />
+      <div class="md-max-w-1/2">
         <h2>Stacje<br />Wielofunkcyjne</h2>
         <p class="c-accent my-5">
           Nasze stacje są projektowane z myślą o różnych zastosowaniach, zarówno w gospodarstwach
