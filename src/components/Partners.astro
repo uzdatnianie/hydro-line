@@ -11,13 +11,13 @@ interface Props {
 const { backgroundUrl } = Astro.props;
 ---
 
-<section class="p-10 rounded-10 bg-image">
-  <h2 class="text-center">Współpracujemy z najlepszymi</h2>
-  <div class="flex justify-between pt-10">
-    <Image src={logoPentair} class={'self-center'} alt="logo-pentair" />
-    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" />
-    <Image src={logoClarwod} class={'self-center'} alt="logo-clarwod" />
-    <Image src={logoAquaphor} class={'self-center'} alt="logo-aquaphor" />
+<section class="p-10 md-rounded-10 bg-image shadow-2xl">
+  <h2 class="pb-5 text-center">Współpracujemy z najlepszymi</h2>
+  <div class="flex justify-center flex-wrap">
+    <Image src={logoPentair} class={'self-center mt-5 mx-10'} alt="logo-pentair" />
+    <Image src={logoAquaphor} class={'self-center mt-5 mx-10'} alt="logo-aquaphor" />
+    <Image src={logoClarwod} class={'self-center mt-5 mx-10'} alt="logo-clarwod" />
+    <Image src={logoAquaphor} class={'self-center mt-5 mx-10'} alt="logo-aquaphor" />
   </div>
 </section>
 
