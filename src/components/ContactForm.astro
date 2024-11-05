@@ -4,33 +4,37 @@ import Button from './Button.astro';
 
 <section class="p-10">
   <h2 class="mb-10 text-center">Skontaktuj sie z doradcą</h2>
-  <form class="flex gap-10">
-    <div class="w-1/2">
+  <form>
+    <div class="grid md-cols-2 md-gap-10">
       <p>
         <label>
           <input type="radio" name="usertype[]" value="private" />
           Chcę poprawić jakość mojej wody
         </label>
       </p>
-      <p><input type="text" placeholder="Imie i nazwisko" name="username" required /></p>
-      <p><input type="text" placeholder="Numer telefonu" name="phone" required /></p>
-      <p><Button bgColor="blue" fullWidth>Wyslij zgłoszenie</Button></p>
-    </div>
-    <div class="w-1/2">
       <p>
         <label>
           <input type="radio" name="usertype[]" value="company" />
           Chcę podjąć współpracę jako firma
         </label>
       </p>
-      <p><input type="email" placeholder="Adres email" name="email" required /></p>
-      <p>
-        <textarea
-          rows="5"
+    </div>
+    <div class="grid md-cols-2 md-gap-10">
+      <div>
+        <p><input type="text" placeholder="Imie i nazwisko" name="username" required /></p>
+        <p><input type="text" placeholder="Numer telefonu" name="phone" required /></p>
+        <p><input type="email" placeholder="Adres email" name="email" required /></p>
+      </div>
+      <div>
+        <p>
+          <textarea
+          rows="4"
           placeholder="Opisz swoje zapytanie/problem z wodą"
           name="message"
           required></textarea>
-      </p>
+        </p>
+        <p><Button bgColor="blue" fullWidth>Wyslij zgłoszenie</Button></p>
+      </div>
     </div>
   </form>
 </section>
@@ -55,7 +59,7 @@ import Button from './Button.astro';
   }
 
   p {
-    @apply mb-7 text-xl;
+    @apply mb-9 text-xl;
   }
 
   label {
