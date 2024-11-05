@@ -22,7 +22,7 @@ import Button from './Button.astro';
     <div class="grid md-cols-2 md-gap-10">
       <div>
         <p><input type="text" placeholder="Imie i nazwisko" name="username" required /></p>
-        <p><input type="text" placeholder="Numer telefonu" name="phone" required /></p>
+        <p><input type="tel" placeholder="Numer telefonu" name="phone" required /></p>
         <p><input type="email" placeholder="Adres email" name="email" required /></p>
       </div>
       <div>
@@ -41,6 +41,7 @@ import Button from './Button.astro';
 
 <style>
   input[type='email'],
+  input[type='tel'],
   input[type='text'],
   textarea {
     @apply border-1 border-blue p-3 rounded-3 w-full c-black;
