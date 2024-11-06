@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Install [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
-- Set proper project node version which is: ```20.17```
+- Set proper project node version: ```20.17```
 ```
 nvm use
 ```
@@ -23,3 +23,6 @@ All commands are run from the root of the project, from a terminal:
 
 ## Project tooling
 This project make use of [Astro](https://astro.build/), [UnoCSS](https://unocss.dev/)
+
+## Using CSS
+It's strongly recommended to use styles as utility tools which are already predefined and based on [Tailwind CSS](https://tailwindcss.com/) namespace and could be easly checked in [UnoCSS Interactive playground](https://unocss.dev/interactive/)
